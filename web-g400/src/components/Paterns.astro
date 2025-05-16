@@ -1,0 +1,105 @@
+---
+
+---
+
+<section class="partners">
+    <div class="container">
+        <div class="section-header">
+            <h2>Partners Tecnológicos</h2>
+            <p>Empresas líderes en su sector que cumplen con los estándares de fiabilidad y solidez establecida por nuestra entidad.</p>
+        </div>
+        <div class="partners-logo-grid">
+            <img src="img/g400-logo.png" alt="Partner 1" class="partner-logo">
+            <img src="img/g400-logo.png" alt="Partner 2" class="partner-logo">
+            <img src="img/g400-logo.png" alt="IBM" class="partner-logo">
+            <img src="img/g400-logo.png" alt="Partner 4" class="partner-logo">
+        </div>
+    </div>
+</section>
+
+
+<style>
+
+    
+/* ==========================================================================
+   11. PARTNERS SECTION
+   ========================================================================== */
+
+.partners {
+    padding: 120px 0;
+    background-color: var(--light);
+    position: relative;
+    overflow: hidden;
+}
+
+.partners::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 69, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%);
+    top: -250px;
+    right: -250px;
+}
+
+.partners::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 132, 0.05) 0%, rgba(0, 240, 255, 0) 70%);
+    bottom: -250px;
+    left: -250px;
+}
+
+.partners-logo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.partner-logo {
+    height: 80px;
+    filter: grayscale(100%) brightness(0.9);
+    opacity: 0.6;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: center;
+    position: relative;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.partner-logo::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+}
+
+.partner-logo:hover::after {
+    animation: shineEffect 1s forwards;
+}
+
+</style>
