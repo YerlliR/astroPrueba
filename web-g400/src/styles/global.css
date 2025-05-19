@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 /* @import "@fortawesome/fontawesome-free/css/all.min.css"; */
 
 
@@ -682,4 +682,53 @@ button:hover ~ .custom-cursor,
     .footer-newsletter {
         display: none !important;
     }
+}
+
+
+
+/* Estilos para los iconos SVG de Font Awesome */
+.svg-inline--fa {
+  width: auto !important; 
+  height: 1em; 
+  vertical-align: -.125em; 
+  display: inline-block;
+}
+
+.feature-icon .svg-inline--fa {
+  font-size: 32px;
+  width: 32px !important;
+}
+
+.service-icon .svg-inline--fa {
+  font-size: 40px;
+  width: 40px !important;
+}
+
+.contact-icon .svg-inline--fa {
+  font-size: 16px;
+  width: 16px !important;
+}
+
+.social-link .svg-inline--fa {
+  font-size: 16px;
+  width: 16px !important;
+}
+
+.mobile-menu-toggle .svg-inline--fa {
+  font-size: 24px;
+  width: 24px !important;
+}
+
+.newsletter-button .svg-inline--fa {
+  font-size: 16px;
+  width: 16px !important;
+}
+
+.feature-card:hover .feature-icon .svg-inline--fa {
+  transform: scale(1.2);
+}
+
+.service-card:hover .service-icon .svg-inline--fa {
+  font-size: 50px;
+  width: 50px !important;
 }

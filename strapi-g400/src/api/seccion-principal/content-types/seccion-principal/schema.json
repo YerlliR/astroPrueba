@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "seccion_principals",
+  "info": {
+    "singularName": "seccion-principal",
+    "pluralName": "seccion-principals",
+    "displayName": "Seccion Principal Pagina_Inicio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "Imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
