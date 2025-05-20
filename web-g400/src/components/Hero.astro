@@ -1,114 +1,28 @@
 ---
-// import { getSeccionPrincipalInfo } from "../lib/get-seccion-principal-info";
 
-// const {Titulo, Descripcion, ImagenUrl} = await getSeccionPrincipalInfo();
-// console.log(Titulo, Descripcion, ImagenUrl);
 ---
 
 
-<section class="hero" id="inicio">
+ <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <!-- Código animado -->
+    <div class="code-animation" id="codeAnimation"></div>
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Soluciones tecnológicas para la Administración Pública</h1>
-                <p>Más de 20 años desarrollando software especializado para la Administración Pública. Un servicio de atención al cliente personalizado que marca la diferencia.</p>
-                <a href="#contacto" class="btn">Solicitar información</a>
-                <a href="#productos" class="btn btn-outline">Ver soluciones</a>
+                <div class="hero-eyebrow">
+                    <i class="fas fa-code"></i> Expertos en Desarrollo
+                </div>
+                <h1 class="hero-title">Soluciones tecnológicas <span>que transforman</span> la Administración Pública</h1>
+                <p class="hero-subtitle">Más de 20 años innovando en software especializado con un servicio de atención personalizado que marca la diferencia.</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-secondary">Descubre Nuestras Soluciones</a>
+                    <a href="#contacto" class="btn btn-outline">Contacta con Nosotros</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="g400-logo.png" alt="Administración Pública Digital">
-            </div>  
+                <img src="escudo_por_defecto.png" alt="Administración Digital">
+            </div>
         </div>
     </div>
 </section>
-
-
-<style>
-  
-.hero {
-    background: var(--gradient-dark);
-    color: white;
-    padding: 220px 0 150px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        linear-gradient(rgba(0, 69, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 69, 255, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px;
-    animation: grid-animation 15s linear infinite;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-text {
-    flex: 1;
-    max-width: 600px;
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    position: relative;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 35px;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s cubic-bezier(0.19, 1, 0.22, 1) 0.7s forwards;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.hero .btn {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s cubic-bezier(0.19, 1, 0.22, 1) 0.9s forwards;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 80px;
-    position: relative;
-    perspective: 1000px;
-}
-
-.hero-image img {
-    filter: brightness(0) invert(1);
-    max-width: 100%;
-    background-color: none;
-    height: auto;
-    border-radius: var(--border-radius-lg);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 1;
-    transform: translateZ(0);
-    opacity: 0;
-    animation: fadeIn 1s ease 1.2s forwards;
-}
-</style>
