@@ -26,3 +26,85 @@
         </div>
     </div>
 </section>
+
+<style>
+/* ==========================================
+   15. CERTIFICATION SECTION
+========================================== */
+.certification {
+    padding: 3rem 0;
+    background-color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 102, 204, 0.05);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.certification-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.certification-logo {
+    width: 180px;
+    height: 180px;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-logo::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(0, 102, 204, 0.1), rgba(255, 255, 255, 0), rgba(255, 107, 0, 0.1), rgba(255, 255, 255, 0));
+    transform: rotate(45deg);
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.certification-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.certification-logo:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.certification-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+</style>

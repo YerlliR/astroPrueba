@@ -49,3 +49,125 @@
         </div>
     </div>
 </section>
+
+<style>
+    
+/* ==========================================
+   10. ABOUT SECTION
+========================================== */
+.about {
+    padding: 8rem 0;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(255, 107, 0, 0.1) 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(255, 107, 0, 0.1) 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.about-image {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.about-text {
+    flex: 0 0 48%;
+}
+
+.about-text h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.features {
+    margin-top: 2rem;
+}
+
+.feature-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.feature-item:hover {
+    background-color: rgba(0, 102, 204, 0.05);
+    transform: translateX(5px);
+}
+
+.feature-icon {
+    margin-right: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 102, 204, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: rotateY(180deg);
+}
+
+.feature-text h4 {
+    margin-bottom: 0.5rem;
+}
+
+</style>

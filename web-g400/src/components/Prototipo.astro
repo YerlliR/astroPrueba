@@ -1,0 +1,812 @@
+---
+import "../js/detalleProducto.js";
+---
+
+<!-- Product Detail Section -->
+<section class="product-detail">
+    <div class="container">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <div class="product-main-image">
+                    <img src="escudo_por_defecto.png" alt="Producto" id="main-product-image">
+                </div>
+                <div class="product-thumbnails">
+                    <div class="product-thumbnail active">
+                        <img src="escudo_por_defecto.png" alt="Thumbnail 1" onclick="changeImage('escudo_por_defecto.png')">
+                    </div>
+                    <div class="product-thumbnail">
+                        <img src="InventarioPatrimonio.png" alt="Thumbnail 2" onclick="changeImage('InventarioPatrimonio.png')">
+                    </div>
+                    <div class="product-thumbnail">
+                        <img src="PortalEmpleado.png" alt="Thumbnail 3" onclick="changeImage('PortalEmpleado.png')">
+                    </div>
+                    <div class="product-thumbnail">
+                        <img src="Nomina.png" alt="Thumbnail 4" onclick="changeImage('Nomina.png')">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-category" id="product-category">Tramitación</div>
+                <h1 class="product-title" id="product-title">Nombre del Producto</h1>
+                <div class="product-rating">
+                    <div class="product-stars">
+                        <i class="fas fa-star product-star"></i>
+                        <i class="fas fa-star product-star"></i>
+                        <i class="fas fa-star product-star"></i>
+                        <i class="fas fa-star product-star"></i>
+                        <i class="fas fa-star-half-alt product-star"></i>
+                    </div>
+                    <div class="product-reviews">42 valoraciones de clientes</div>
+                </div>
+                <div class="product-description" id="product-description">
+                    <p>Descripción detallada del producto que se mostrará dinámicamente según el producto seleccionado. Esta área será actualizada mediante JavaScript para mostrar la información específica del producto que el usuario ha seleccionado.</p>
+                    <p>Aquí se presentarán los beneficios principales, el propósito y las ventajas que ofrece esta solución tecnológica para la Administración Pública.</p>
+                </div>
+                <h3 class="product-features-title">Características Principales</h3>
+                <ul class="product-features-list" id="product-features">
+                    <li class="product-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Característica 1 que se mostrará de forma dinámica</span>
+                    </li>
+                    <li class="product-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Característica 2 que se mostrará de forma dinámica</span>
+                    </li>
+                    <li class="product-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Característica 3 que se mostrará de forma dinámica</span>
+                    </li>
+                    <li class="product-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Característica 4 que se mostrará de forma dinámica</span>
+                    </li>
+                    <li class="product-feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Característica 5 que se mostrará de forma dinámica</span>
+                    </li>
+                </ul>
+                <h3 class="product-clients-title">Algunos de Nuestros Clientes</h3>
+                <div class="product-clients">
+                    <div class="product-client">
+                        <img src="/teruel.png" alt="Cliente 1">
+                    </div>
+                    <div class="product-client">
+                        <img src="g400-logo.png" alt="Cliente 2">
+                    </div>
+                    <div class="product-client">
+                        <img src="teruel.png" alt="Cliente 3">
+                    </div>
+                    <div class="product-client">
+                        <img src="g400-logo.png" alt="Cliente 4">
+                    </div>
+                </div>
+                <div class="product-cta">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Demostración</a>
+                    <a href="#" class="btn btn-outline">Descargar Brochure</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+            <div class="tabs-nav">
+                <div class="tab-item active" data-tab="description">Descripción Detallada</div>
+                <div class="tab-item" data-tab="specs">Especificaciones Técnicas</div>
+                <div class="tab-item" data-tab="screenshots">Capturas de Pantalla</div>
+                <div class="tab-item" data-tab="faq">Preguntas Frecuentes</div>
+            </div>
+            
+            <!-- Description Tab -->
+            <div class="tab-content active" id="description-tab">
+                <h3>Descripción Completa</h3>
+                <p>El contenido de esta sección será mostrado dinámicamente según el producto seleccionado. Aquí se proporcionará una descripción detallada de las funcionalidades, beneficios y características específicas del producto.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac nisl vel ligula ultrices tincidunt. Aenean commodo augue at tortor gravida, in finibus nunc eleifend. Integer convallis magna sit amet vehicula luctus. Donec maximus metus ut nisi finibus, eget pellentesque eros pulvinar.</p>
+                <h4>Beneficios para la Administración Pública</h4>
+                <p>Aquí se detallarán los beneficios específicos que ofrece este producto para la Administración Pública, cómo mejora la eficiencia, reduce costos y optimiza procesos internos.</p>
+                <ul>
+                    <li>Beneficio 1 que se mostrará de forma dinámica</li>
+                    <li>Beneficio 2 que se mostrará de forma dinámica</li>
+                    <li>Beneficio 3 que se mostrará de forma dinámica</li>
+                    <li>Beneficio 4 que se mostrará de forma dinámica</li>
+                </ul>
+                <h4>Integración con Otros Sistemas</h4>
+                <p>Información sobre la capacidad de integración del producto con otros sistemas existentes en la Administración Pública, APIs disponibles y protocolos de comunicación soportados.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac nisl vel ligula ultrices tincidunt. Aenean commodo augue at tortor gravida, in finibus nunc eleifend.</p>
+            </div>
+            
+            <!-- Specifications Tab -->
+            <div class="tab-content" id="specs-tab">
+                <h3>Especificaciones Técnicas</h3>
+                <p>Esta sección contiene las especificaciones técnicas detalladas del producto, incluyendo requerimientos de hardware, software, compatibilidad y otros aspectos técnicos relevantes.</p>
+                <table class="specs-table">
+                    <tr>
+                        <th>Tipo de Aplicación</th>
+                        <td>Web, Escritorio, Móvil (responsive)</td>
+                    </tr>
+                    <tr>
+                        <th>Lenguajes de Programación</th>
+                        <td>Java, JavaScript, HTML5, CSS3</td>
+                    </tr>
+                    <tr>
+                        <th>Bases de Datos Compatibles</th>
+                        <td>MySQL, PostgreSQL, Oracle, SQL Server</td>
+                    </tr>
+                    <tr>
+                        <th>Requerimientos de Servidor</th>
+                        <td>Servidor con mínimo 8GB RAM, procesador Quad Core, 100GB almacenamiento</td>
+                    </tr>
+                    <tr>
+                        <th>Requisitos del Cliente</th>
+                        <td>Navegador web moderno (Chrome, Firefox, Edge, Safari)</td>
+                    </tr>
+                    <tr>
+                        <th>Certificaciones</th>
+                        <td>ENS, ISO 27001, Cumplimiento RGPD</td>
+                    </tr>
+                    <tr>
+                        <th>Compatibilidad</th>
+                        <td>Windows, Linux, MacOS</td>
+                    </tr>
+                    <tr>
+                        <th>Seguridad</th>
+                        <td>Autenticación multifactor, encriptación AES-256, firma digital</td>
+                    </tr>
+                    <tr>
+                        <th>Escalabilidad</th>
+                        <td>Arquitectura distribuida, balanceo de carga, clustering</td>
+                    </tr>
+                    <tr>
+                        <th>Soporte</th>
+                        <td>Servicio técnico 24/7, actualizaciones periódicas, mantenimiento incluido</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Screenshots Tab -->
+            <div class="tab-content" id="screenshots-tab">
+                <h3>Capturas de Pantalla</h3>
+                <p>Explora las diferentes interfaces y funcionalidades de nuestro producto a través de estas capturas de pantalla. Podrás ver el diseño intuitivo y la facilidad de uso que caracteriza a todas nuestras soluciones.</p>
+                <div class="screenshots-gallery">
+                    <div class="screenshot-item">
+                        <img src="InventarioPatrimonio.png" alt="Captura 1">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="PortalEmpleado.png" alt="Captura 2">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="Nomina.png" alt="Captura 3">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="escudo_por_defecto.png" alt="Captura 4">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="InventarioPatrimonio.png" alt="Captura 5">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="PortalEmpleado.png" alt="Captura 6">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Tab -->
+            <div class="tab-content" id="faq-tab">
+                <h3>Preguntas Frecuentes</h3>
+                <p>Encuentra respuestas a las preguntas más comunes sobre este producto. Si tienes alguna otra consulta, no dudes en contactar con nuestro equipo de soporte.</p>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Cuál es el tiempo de implementación promedio?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>El tiempo de implementación varía según la complejidad de la organización y la cantidad de datos a migrar, pero en promedio se completa en 2-3 meses. Nuestro equipo realiza un análisis preliminar para proporcionarle un cronograma detallado adaptado a su situación específica.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Qué soporte técnico ofrecen después de la implementación?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ofrecemos diferentes niveles de soporte técnico, desde soporte básico en horario laboral hasta soporte premium 24/7. Todos nuestros planes incluyen actualizaciones de software, resolución de incidencias y acceso a nuestra base de conocimiento. Adicionalmente, contamos con un servicio de mantenimiento preventivo y evolutivo para garantizar que su sistema se mantenga actualizado y funcionando óptimamente.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿El producto cumple con la normativa vigente de administración electrónica?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, todos nuestros productos están diseñados en cumplimiento con la normativa vigente, incluyendo la Ley 39/2015, Ley 40/2015, ENS (Esquema Nacional de Seguridad), ENI (Esquema Nacional de Interoperabilidad) y RGPD. Además, realizamos actualizaciones periódicas para garantizar la adaptación a los cambios normativos que puedan surgir, asegurando así que su administración siempre esté al día con los requisitos legales.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Es posible integrar este producto con nuestros sistemas actuales?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutamente. Nuestros productos están diseñados con una arquitectura abierta que permite la integración con la mayoría de los sistemas existentes en la Administración Pública. Disponemos de APIs documentadas, conectores específicos para los sistemas más comunes y capacidad para desarrollar integraciones personalizadas según las necesidades de cada organización. Durante la fase de análisis, evaluamos sus sistemas actuales y diseñamos la estrategia de integración más adecuada.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            ¿Qué tipo de formación proporcionan para los usuarios?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ofrecemos formación presencial y online adaptada a los diferentes perfiles de usuarios (administradores, técnicos, usuarios finales). Nuestros programas formativos incluyen manuales detallados, vídeos tutoriales, y sesiones prácticas. Además, disponemos de una plataforma de e-learning con cursos interactivos que permiten a los usuarios aprender a su propio ritmo. El objetivo es garantizar que todos los usuarios puedan aprovechar al máximo las funcionalidades del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Products -->
+<section class="related-products">
+    <div class="container">
+        <h2 class="related-products-title">Productos Relacionados</h2>
+        <div class="related-products-grid">
+            <div class="related-product-card">
+                <div class="related-product-image">
+                    <img src="PortalEmpleado.png" alt="Producto Relacionado 1">
+                </div>
+                <div class="related-product-content">
+                    <h3 class="related-product-title">
+                        <a href="#">Portal del Empleado</a>
+                    </h3>
+                    <p class="related-product-desc">Distribuya tareas, centralice información de plantilla y mejore la comunicación interna. Integrado con Control de Presencia y Gestión de RRHH.</p>
+                    <a href="#" class="btn btn-outline">Ver Más</a>
+                </div>
+            </div>
+            <div class="related-product-card">
+                <div class="related-product-image">
+                    <img src="Nomina.png" alt="Producto Relacionado 2">
+                </div>
+                <div class="related-product-content">
+                    <h3 class="related-product-title">
+                        <a href="#">Control de Presencia</a>
+                    </h3>
+                    <p class="related-product-desc">Gestión en tiempo real de los fichajes de los empleados, con soporte para turnos y flexibilidad horaria. Integrado con Portal del Empleado.</p>
+                    <a href="#" class="btn btn-outline">Ver Más</a>
+                </div>
+            </div>
+            <div class="related-product-card">
+                <div class="related-product-image">
+                    <img src="InventarioPatrimonio.png" alt="Producto Relacionado 3">
+                </div>
+                <div class="related-product-content">
+                    <h3 class="related-product-title">
+                        <a href="#">Gestión de Padrón</a>
+                    </h3>
+                    <p class="related-product-desc">Aplicación web para la gestión integral del Padrón Municipal de Habitantes, adaptada a la normativa vigente y compatible con el INE.</p>
+                    <a href="#" class="btn btn-outline">Ver Más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">¿Necesita una demostración personalizada?</h2>
+            <p class="cta-text">Contáctenos hoy mismo para programar una demostración personalizada de esta solución. Nuestros expertos le mostrarán cómo puede optimizar sus procesos administrativos.</p>
+            <div class="cta-buttons">
+                <a href="#contacto" class="btn btn-secondary">Solicitar Demo</a>
+                <a href="index.html#productos" class="btn btn-outline">Ver Más Productos</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/detalleProducto.js"></script>
+<style>
+/* ==========================================
+   2. GALERÍA Y DETALLES DEL PRODUCTO
+========================================== */
+.product-detail {
+    margin-top: 5.3rem;
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.product-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.product-gallery {
+    flex: 0 0 45%;
+}
+
+.product-main-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.product-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.product-thumbnail:hover {
+    transform: translateY(-5px);
+}
+
+.product-thumbnail.active {
+    border-color: var(--primary);
+}
+
+.product-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 0 0 45%;
+}
+
+.product-category {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background-color: rgba(0, 102, 204, 0.1);
+    border-radius: 30px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-stars {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.product-star {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+.product-reviews {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.product-description {
+    margin-bottom: 2rem;
+    color: var(--gray);
+}
+
+.product-features-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.product-features-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.product-feature-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-feature-item i {
+    color: var(--success);
+    margin-right: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.product-clients-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.product-clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-client {
+    width: 100px;
+    height: 100px;
+    background-color: var(--light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.product-client:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.product-client img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.product-client:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.product-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.btn-outline{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+/* Ajuste específico para los botones en la página de detalle de producto */
+.product-cta .btn-outline {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.product-cta .btn-outline:hover {
+    background-color: var(--primary);
+}
+
+
+.fa-circle-check{
+    margin-right: 0.5rem;   
+}
+/* ==========================================
+   3. TABS DEL PRODUCTO
+========================================== */
+.product-tabs {
+    margin-top: 4rem;
+}
+
+.tabs-nav {
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+}
+
+.tab-item {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--gray);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-item::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.tab-item:hover {
+    color: var(--primary);
+}
+
+.tab-item.active {
+    color: var(--primary);
+}
+
+.tab-item.active::after {
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   4. TABLA DE ESPECIFICACIONES TÉCNICAS
+========================================== */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.specs-table tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.specs-table th {
+    font-weight: 600;
+    color: var(--dark);
+    width: 30%;
+}
+
+/* ==========================================
+   5. GALERÍA DE CAPTURAS DE PANTALLA
+========================================== */
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.screenshot-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ==========================================
+   6. SECCIÓN DE FAQ (PREGUNTAS FRECUENTES)
+========================================== */
+.faq-item {
+    margin-bottom: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.2rem 1.5rem;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-question i {
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1.5rem;
+    max-height: 500px;
+}
+
+/* ==========================================
+   7. PRODUCTOS RELACIONADOS
+========================================== */
+.related-products {
+    padding: 4rem 0;
+    background-color: var(--light);
+}
+
+.related-products-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    position: relative;
+}
+
+.related-products-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+}
+
+.related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.related-product-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.related-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.related-product-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.related-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.related-product-card:hover .related-product-image img {
+    transform: scale(1.1);
+}
+
+.related-product-content {
+    padding: 1.5rem;
+}
+
+.related-product-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.related-product-title a {
+    color: var(--dark);
+}
+
+.related-product-title:hover a {
+    color: var(--primary);
+}
+
+.related-product-desc {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   8. BANNER CTA (CALL TO ACTION)
+========================================== */
+.cta-banner {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-text {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Ajuste específico para los botones en la sección CTA */
+.cta-banner .btn-outline {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.cta-banner .btn-outline:hover {
+    color: var(--primary);
+}
+
+</style>
